@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaxReimburser.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Entry x:Name="salary" Placeholder="Actual Salary" />
+            <Entry x:Name="price" Placeholder="Product Price" />
+            
+            <Button
+                x:Name="CounterBtn"
+                Text="Calculate Reimbursement" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Label x:Name="summaryText" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
